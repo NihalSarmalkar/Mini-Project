@@ -87,9 +87,9 @@ html {
 }
 
 #navbar ul li a:hover {
-    /* background-color: #b5dd35; */
+    background-color: #b5dd35;
     color: #000;
-    border: 1px solid #b5dd35;
+    /* border: 1px solid #b5dd35; */
 }
 
 
