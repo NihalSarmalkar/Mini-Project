@@ -5,88 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width : 1100px)" href="static\css\phone.css">
     <title>predict_crop</title>
 </head>
-<style>
-input[type=number], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-
-}
-label{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-
-}
-
-input[type=submit] {
-  width: 100%;
-  background-color: #b5dd35;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-input[type=submit]:hover {
-  background-color: #ebf0db;
-  
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.form_container{
-
-  border-radius: 5px;
-    /* background-color: #f2f2f2; */
-  padding: 20px;
-  width: 800px;
-  margin: auto;
-  margin: 50px auto;
-
-}
-.heading{
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    margin: 30px;
-    font-size: 30px;
-}
-#submit_btn{
-  color: black;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: monospace;
-    width: fit-content;
-    /* float: right; */
-    display: block;
-    margin: 15px auto;
-
-}
-</style>
 <body>
-    <nav id="navbar">
-        <div id="logo">
+  <nav id="navbar" class="h-nav-resp navbar">
+    <div id="logo" class="v-class-resp">
+        <img src="static\img\Farmetic_logo.png" alt="">
+    </div>
+    
+    
+    <ul class="nav-list v-class-resp">
+        <div id="logo_mobile">
             <img src="static\img\Farmetic_logo.png" alt="">
-        </div>
+        </div>  
+        <li id="li1" class="item"><a href="/">Home</a></li>
+        <li id="li2" class="item"><a href="/#about-section">About</a></li>
+        <li id="li3" class="item"><a href="/predict_crop">Predict Crop</a></li>
+        <li id="li4" class="item"><a href="/#contact">Contact Us</a></li>
         
-        <ul>
-            <li class="item"><a href="/">Home</a></li>
-            <li class="item"><a href="/#about-section">About</a></li>
-            <li class="item"><a href="/predict_crop">Predict Crop</a></li>
-            <li class="item"><a href="/#contact">Contact Us</a></li>
-            
 
-        </ul>
+    </ul>
+    <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
 
-    </nav>
+</nav>
 
 <h3 class="heading">Fill up the form to predict the right <span style="color: #b5dd35;">Crop</span> that suits your farm.</h3>
 
@@ -117,6 +63,7 @@ input[type=submit]:hover {
     <input id="submit_btn" type="submit" value="Submit">
   </form>
 </div>
+<script src="/static/js/resp.js"></script>
 
 </body>
 </html>
