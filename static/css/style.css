@@ -650,3 +650,11 @@ input[type=number], select {
       opacity: 1;
     }
   }
+
+  .result_container{
+    border: 2px solid;
+    width: fit-content;
+    margin: auto;
+    border-radius: 43px;
+
+}

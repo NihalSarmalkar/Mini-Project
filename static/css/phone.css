@@ -333,7 +333,7 @@ a {
 }
 
 .h-nav-resp {
-    transition: 0.5s;
+    transition: 1.0s;
     height: 60px;
 }
 #logo{
@@ -377,4 +377,25 @@ a {
 #home {
     height: 247px;
     padding: 200px 21px;
+}
+
+.result_container{
+
+    border: 2px solid;
+    width: 301px;
+    
+    margin: 45px auto;
+
+    border-radius: 43px;
+
+
+}
+
+.chevron_container {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: auto;
+    padding-top: 150px;
 }
