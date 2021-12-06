@@ -2,6 +2,13 @@ from flask import Flask, request, render_template
 import pickle
 import requests
 import numpy as np
+import json
+
+
+
+with open('config.json', 'r') as c:
+    params = json.load(c)["params"]
+
 
 crop_recommendation_model_path = 'model/MiniProject_RandomForest.pkl'
 crop_recommendation_model = pickle.load(
@@ -10,8 +17,8 @@ crop_recommendation_model = pickle.load(
 
 
 def weather_fetch(city_name):
-    
-    api_key = '42b6b378bf320ec65f4cb1a193c4f4db'
+
+    api_key = params['climate_api']
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
     complete_url = base_url + "appid=" + api_key + "&q=" + city_name
