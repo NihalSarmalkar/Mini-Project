@@ -35,14 +35,13 @@
 
 </nav>
 
-
 {% if 'Error Please Try Again !! ' in prediction %}
   <div class="result_container">
     <h2 class="heading">Network error or Wrong inputs received <span style="color: red;">{{prediction}}</span></h2>
   </div>
 {% elif prediction %}
 <div class="result_container">
-  <h2 class="heading">You should grow <span style="color: #b5dd35;">{{prediction}}</span> crop in your farm !! </h2>
+  <h2 class="heading">You should use <span style="color: #b5dd35;">{{prediction}}</span> fertilizer in your farm !! </h2>
 </div>
 
 {% endif %}
@@ -50,12 +49,16 @@
 
 
 
-<h3 class="heading">Fill up the form to predict the right <span style="color: #b5dd35;">Crop</span> that suits your farm.</h3>
+<h3 class="heading">Choose right <span style="color: #b5dd35;">fertilizer</span> that suits your farm.</h3>
 
 <div class="form_container">
-  <form action="/crop-predict" method="POST">
+  <form action="/fertilizer-predict" method="POST">
+    
     <label for="fname">Nitrogen level</label>
     <input type="number" id="fname" name="nitrogen" placeholder="Enter the Nitrogen level in soil">
+
+    <label for="fname">Moisture</label>
+    <input type="number" id="fname" name="Moisture" placeholder="Enter the amount of Moisture in soil">
 
     <label for="lname">Phosphorous level</label>
     <input type="number" id="lname" name="phosphorous" placeholder="Enter Phosphorous level in soil">
@@ -63,9 +66,13 @@
     <label for="lname">Pottasium level</label>
     <input type="number" id="lname" name="pottasium" placeholder="Enter Pottasium level in soil">
 
-    <label for="lname">Rainfall in (mm)</label>
-    <input type="number" id="lname" name="rainfall" placeholder="Enter amount of Rainfall">
+    <label for="lname">Type of soil</label>
+    <input  type="text" id="lname" name="typeSoil" placeholder="Enter type of soil present in farm">
 
+    <label for="lname">Type of crop</label>
+    <input  type="text"id="lname" name="typeCrop" placeholder="Enter type of crop grown in your farm">
+
+   
     <label for="country">State</label>
     <select
         onchange="print_city('state', this.selectedIndex);"

@@ -31,7 +31,7 @@ html {
     position: sticky;
     top: 0px;
     z-index: 1;
-    padding: 23px;
+    padding: 1px;
     background-color: white;
     /* background-color: #f3fadc; */
 }
@@ -43,7 +43,7 @@ html {
     margin: 0px -10px;
 }
 #logo img {
-    height: 69px;
+    height: 105px;
     margin: 0px 11px;
     border-radius: 22px;
 }
@@ -221,6 +221,7 @@ html {
 #contact-box label {
     font-size: 1.3rem;
     font-family: 'Bree Serif', serif;
+   
 }
 
 
@@ -492,6 +493,13 @@ a:hover {
     justify-content: center;
     flex-direction: row;
 }
+
+.services-countainerDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .about-farmetic-img img{
     width: 500px;
 }
@@ -510,10 +518,20 @@ input[type=number], select {
     box-sizing: border-box;
   
   }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  
+  }
 
   label{
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-weight: bold;
+     
   
   }
   
