@@ -16,6 +16,8 @@ var burger = document.querySelector('.burger')
                 document.getElementById('li2').style.display = 'none'
                 document.getElementById('li4').style.display = 'none'
                 document.getElementById('li3').style.display = 'none'
+                document.getElementById('li6').style.display = 'none'
+                document.getElementById('li5').style.display = 'none'
                 flag=0;
 
             }
@@ -24,6 +26,8 @@ var burger = document.querySelector('.burger')
                 document.getElementById('li2').style.display = 'Block'
                 document.getElementById('li4').style.display = 'Block'
                 document.getElementById('li3').style.display = 'Block'
+                document.getElementById('li6').style.display = 'Block'
+                document.getElementById('li5').style.display = 'Block'
                 flag=1;
 
             }
