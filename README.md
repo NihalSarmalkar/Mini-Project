@@ -15,4 +15,4 @@ Github Link -
 ## Screenshots
 
 Website - 
-![App Screenshot](WhatsApp%20Image%202023-02-05%20at%2017.00.50.jpg)
+![App Screenshot](SmartKrishi/tree/master/static/img/Screenshot_20221230_104809.png)
